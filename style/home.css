@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: AnonymousPro;
+}
+
+body{
+    background-color: #17181a;
+}
+
+#topbar{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+}
+
+#topbar-right{
+    position: absolute;
+    right: 0%;
+    text-align: right;
+    align-items: center;
+    display: flex;
+}
+
+#topbar-right ion-icon{
+    padding: 1vw;
+    font-size: 3vw;
+    transition: ease 0.5s;
+}
+
+#topbar-right a{
+    text-decoration: none;
+    transition: ease 0.5s;
+}
+
+#topbar-right a div span{
+    font-size: 1vw;
+    display: inline-block;
+    vertical-align: middle;
+    transition: ease 0.5s;
+}
+
+#topbar-right a div{
+    display: flex;
+    align-items: center; 
+}
+
+#topbar-right a:hover{
+    color: #17181a;
+    background-color: white;
+    cursor: pointer;
+}
+
+#topbar-right a:hover > div ion-icon{
+    color: #17181a;
+}
+
+#topbar-right a:hover > div span{
+    color: #17181a;
+}
+
+#title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    font-weight: 500;
+    width: 100vw;
+    text-align: center;
+}
+
+#subtitle{
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vw;
+    font-weight: 500;
+    width: 100vw;
+    text-align: center;
+}
+
+b{
+    font-weight: 900;
+}
+
+#main-logo{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10vw;
+}
+
+#lang{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    text-align: center;
+}
+
+#lang img{
+    width: 3vw;
+    padding-left: 1vw;
+    transition: ease 0.5s;
+}
+
+#lang img:hover{
+    cursor: pointer;
+    transform: translate(0, -10px);
+}
+
+#langText{
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#projects-btn{
+    padding: 5px;
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    transition: ease 0.5s;
+}
+
+#projects-btn div span{
+    font-size: 1.5vw;
+    display: inline-block;
+    vertical-align: middle;
+    transition: ease 0.5s;
+}
+
+#projects-btn div{
+    display: flex;
+    align-items: center; 
+}
+
+#projects-btn:hover{
+    color: #17181a;
+    background-color: white;
+    cursor: pointer;
+}
+
+#projects-btn:hover > div ion-icon{
+    color: #17181a;
+}
+
+#projects-btn:hover > div span{
+    color: #17181a;
+}
+
+#projects-btn ion-icon{
+    padding-left: 1vw;
+    font-size: 3vw;
+    transition: ease 0.5s;
+}
+
+@media only screen and (max-width: 1091px) {
+    #title{
+        font-size: 3.6vw;
+    }
+    #subtitle{
+        font-size: 1.8vw;
+    }
+    #lang img{
+        width: 5vw;
+    }
+    #main-logo{
+        width: 12vw;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    #title{
+        font-size: 6vw;
+    }
+    #subtitle{
+        font-size: 2.9vw;
+    }
+    #lang img{
+        width: 7vw;
+    }
+    #topbar-right ion-icon{
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #title{
+        font-size: 6vw;
+    }
+    #subtitle{
+        font-size: 3vw;
+    }
+    #lang img{
+        width: 7vw;
+    }
+    #main-logo{
+        width: 20vw;
+    }
+    #topbar-right ion-icon{
+        font-size: 6vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #title{
+        font-size: 6vw;
+    }
+    #subtitle{
+        font-size: 3vw;
+    }
+    #lang img{
+        width: 8vw;
+    }
+    #main-logo{
+        width: 20vw;
+    }
+    #topbar-right ion-icon{
+        font-size: 9vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #title{
+        font-size: 6vw;
+    }
+    #subtitle{
+        font-size: 3vw;
+    }
+    #lang img{
+        width: 9vw;
+    }
+    #main-logo{
+        width: 20vw;
+    }
+    #topbar-right ion-icon{
+        font-size: 12vw;
+    }
+}

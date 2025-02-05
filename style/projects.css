@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: AnonymousPro;
+}
+
+body{
+    background-color: #17181a;
+}
+
+#topbar{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+}
+
+#topbar-right{
+    position: absolute;
+    right: 0%;
+    text-align: right;
+    align-items: center;
+    display: flex;
+}
+
+#topbar-right ion-icon{
+    padding: 1vw;
+    font-size: 3vw;
+    transition: ease 0.5s;
+}
+
+#topbar-right a{
+    text-decoration: none;
+    transition: ease 0.5s;
+}
+
+#topbar-right a div span{
+    font-size: 1vw;
+    display: inline-block;
+    vertical-align: middle;
+    transition: ease 0.5s;
+}
+
+#topbar-right a div{
+    display: flex;
+    align-items: center; 
+}
+
+#topbar-right a:hover{
+    color: #17181a;
+    background-color: white;
+    cursor: pointer;
+}
+
+#topbar-right a:hover > div ion-icon{
+    color: #17181a;
+}
+
+#topbar-right a:hover > div span{
+    color: #17181a;
+}
+
+#topbar-left{
+    position: absolute;
+    left: 0%;
+    text-align: right;
+    align-items: center;
+    display: flex;
+}
+
+#logo{
+    width: 4.5vw;
+    padding: 10px;
+}
+
+#title{
+    position: absolute;
+    padding: 1vw;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 3vw;
+    font-weight: 500;
+    text-align: center;
+}
+
+/*#121213*/
+
+.project{
+    background-color: #121213;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.project-title{
+    font-size: 2vw;
+}
+
+.project-desc{
+    font-size: 1vw;
+}
+
+.lang{
+    padding-top: 20px;
+}
+
+.lang img{
+    width: 1.5vw;
+    padding-right: 1vw;
+    transition: ease 0.5s;
+}
+
+.lang img:hover{
+    cursor: pointer;
+    transform: translate(0, -10px);
+}
+
+#main-table{
+    position: absolute;
+    top: 15%;
+    padding: 50px;
+}
+
+#main-table tr td{
+    width: 30vw;
+    vertical-align: top;
+    height: 100%;
+}
+
+#inner-table{
+    height: inherit;
+}
+
+@media only screen and (max-width: 1091px) {
+    
+}
+
+@media only screen and (max-width: 920px) {
+    #topbar-right ion-icon{
+        font-size: 5vw;
+    }
+    .project-title{
+        font-size: 3vw;
+    }
+    .project-desc{
+        font-size: 1.5vw;
+    }
+    .lang img{
+        width: 2.5vw;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #topbar-right ion-icon{
+        font-size: 6vw;
+    }
+    .project-title{
+        font-size: 3vw;
+    }
+    .project-desc{
+        font-size: 1.7vw;
+    }
+    .lang img{
+        width: 2.5vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #topbar-right ion-icon{
+        font-size: 9vw;
+    }
+    #main-table tr{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #main-table tr td{
+        width: 80vw;
+    }
+    .project-title{
+        font-size: 4vw;
+    }
+    .project-desc{
+        font-size: 2.5vw;
+    }
+    .lang img{
+        width: 3vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #topbar-right ion-icon{
+        font-size: 12vw;
+    }
+    .project-title{
+        font-size: 5vw;
+    }
+    .project-desc{
+        font-size: 3.5vw;
+    }
+    .lang img{
+        width: 4vw;
+    }
+    
+}

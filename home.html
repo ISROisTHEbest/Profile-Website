@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style/home.css">
+    <link rel="stylesheet" type="text/css" href="/style/fonts.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.ico">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        function langTextAdd(element){
+            var text = document.getElementById("langText");
+            text.innerHTML = element.srcElement.id;
+            text.style.display = "block";
+        }
+        function langTextRemove(){
+            var text = document.getElementById("langText");
+            text.style.display = "none";
+        }
+        function onloadFunc(){
+            var text = document.getElementById("langText");
+            text.style.display = "none";
+            var imgs = document.getElementsByClassName("lang-img");
+            for (var img of imgs){
+                img.addEventListener('mouseover', langTextAdd);
+                img.addEventListener('mouseout', langTextRemove);
+            }
+        }
+        window.onload = onloadFunc;
+    </script>
+    <title>ISROisTHEbest</title>
+</head>
+
+<body>
+    <div id="topbar">
+        <div id="topbar-right">
+            <a target="_blank" href="https://github.com/isroisthebest"><div><ion-icon name="logo-github"></ion-icon></div></a>
+            <a target="_blank" href="https://youtube.com/@botnebula"><div><ion-icon name="logo-youtube"></ion-icon></div></a>
+        </div>
+    </div>
+    <img id="main-logo" src="/assets/images/logo.png">
+    <h1 id="title">Hello, I am <b>ISROisTHEbest</b></h1>
+    <h1 id="subtitle">Developer, Chess Player, F1 Fan, Space Enthusiast</h1>
+    <div id="lang">
+        <img class="lang-img" id="Python" src="/assets/images/python.png">
+        <img class="lang-img" id="HTML" src="/assets/images/html.png">
+        <img class="lang-img" id="CSS" src="/assets/images/css.png">
+        <img class="lang-img" id="Javascript" src="/assets/images/js.png">
+        <img class="lang-img" id="Unity" src="/assets/images/unity.png">
+        <img class="lang-img" id="Arduino" src="/assets/images/arduino.png">
+    </div>
+    <h2 id="langText">Coding Language</h2>
+    <a id="projects-btn" href="/projects.html"><div><span>My Projects</span><ion-icon name="arrow-forward-outline"></ion-icon></div></a>
+</body>
+
+</html>
