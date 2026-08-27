@@ -105,7 +105,7 @@ b{
 }
 
 #lang img{
-    width: 3vw;
+    height: 6.5vh;
     padding-left: 1vw;
     transition: ease 0.5s;
 }
@@ -126,7 +126,7 @@ b{
 #projects-btn{
     padding: 5px;
     position: absolute;
-    top: 82%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-decoration: none;
@@ -173,7 +173,7 @@ b{
         font-size: 1.8vw;
     }
     #lang img{
-        width: 5vw;
+        height: 6vh;
     }
     #main-logo{
         width: 12vw;
@@ -188,7 +188,7 @@ b{
         font-size: 2.9vw;
     }
     #lang img{
-        width: 7vw;
+        height: 5.5vh;
     }
     #topbar-right ion-icon{
         font-size: 5vw;
@@ -203,7 +203,7 @@ b{
         font-size: 3vw;
     }
     #lang img{
-        width: 7vw;
+        height: 5.5vh;
     }
     #main-logo{
         width: 20vw;
@@ -221,7 +221,7 @@ b{
         font-size: 3vw;
     }
     #lang img{
-        width: 8vw;
+        height: 5vh;
     }
     #main-logo{
         width: 20vw;
@@ -239,7 +239,7 @@ b{
         font-size: 3vw;
     }
     #lang img{
-        width: 9vw;
+        height: 4vh;
     }
     #main-logo{
         width: 20vw;
